@@ -16,7 +16,7 @@ void push(int a, node** t)
         (*t) = new node;               
         (*t)->info = a;                 
         (*t)->l = (*t)->r = nullptr;
-        return;                         
+        return;                         //
     }
 
     if (a > (*t)->info) push(a, &(*t)->r); 
