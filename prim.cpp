@@ -17,7 +17,7 @@ int main() {
 	for (int i = 0; i < n; ++i) {
 		int v = -1;
 		for (int j = 0; j < n; ++j)
-			if (!used[j] && (v == -1 || min_e[j] < min_e[v]))
+			if (!used[j] && (v == -1 || min_e[j] < min_e[v])) //
 				v = j;
 		if (min_e[v] == INF) {
 			cout << "NO";
